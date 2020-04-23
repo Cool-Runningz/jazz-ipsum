@@ -162,6 +162,13 @@ section > div:first-of-type {
   border: 0;
 }
 
+.github-link {
+  right: 5px;
+  top: 0;
+  position: absolute;
+  width: 1.875rem;
+}
+
 /******* Unsplash Props ********/
 .unsplash-link {
   background-color: black;
