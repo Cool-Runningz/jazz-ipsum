@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link type="text/javascript" href="data/quotes-stan-getz.json" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand|Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Jazz Ipsum</title>
+  </head>
+  <body>
+    <div id="header-container">
+      <h1>Jazz Ipsum</h1>
+      <h2>
+        Snazzy lorem ipsum based on quotes from jazz legends
+      </h2>
+    </div>
+    <section>
+      <div>
+        <div>
+          <h4>Choose the text length:</h4>
+          <input
+            type="radio"
+            id="short-length"
+            name="text-length"
+            class="length-filter-input"
+            value="short"
+          />
+          <label for="short-length" class="length-filter-label">Short</label>
+
+          <input
+            checked
+            type="radio"
+            id="medium-length"
+            name="text-length"
+            class="length-filter-input"
+            value="medium"
+          />
+          <label for="medium-length" class="length-filter-label">Medium</label>
+
+          <input
+            type="radio"
+            id="long-length"
+            name="text-length"
+            class="length-filter-input"
+            value="long"
+          />
+          <label for="long-length" class="length-filter-label">Long</label>
+        </div>
+        <div>
+          <h4>Select a musician:</h4>
+          <div>
+            <input
+              checked
+              type="radio"
+              id="stan-getz"
+              name="musician-selection"
+              class="musician-filter-input"
+              value="Stan Getz"
+            />
+            <label for="stan-getz" class="musician-filter-label">
+              Stan Getz
+            </label>
+
+            <input
+              type="radio"
+              id="paul-desmond"
+              name="musician-selection"
+              class="musician-filter-input"
+              value="Paul Desmond"
+            />
+            <label for="paul-desmond" class="musician-filter-label">
+              Paul Desmond
+            </label>
+
+            <input
+              type="radio"
+              id="ella-fitzgerald"
+              name="musician-selection"
+              class="musician-filter-input"
+              value="Ella Fitzgerald"
+            />
+            <label for="ella-fitzgerald" class="musician-filter-label">
+              Ella Fitzgerald
+            </label>
+
+            <input
+              type="radio"
+              id="duke-ellington"
+              name="musician-selection"
+              class="musician-filter-input"
+              value="Duke Ellington"
+            />
+            <label for="duke-ellington" class="musician-filter-label">
+              Duke Ellington
+            </label>
+
+            <input
+              type="radio"
+              id="miles-davis"
+              name="musician-selection"
+              class="musician-filter-input"
+              value="Miles Davis"
+            />
+            <label for="miles-davis" class="musician-filter-label">
+              Miles Davis
+            </label>
+
+            <input
+              type="radio"
+              id="louis-armstrong"
+              name="musician-selection"
+              class="musician-filter-input"
+              value="Louis Armstrong"
+            />
+            <label for="louis-armstrong" class="musician-filter-label">
+              Louis Armstrong
+            </label>
+
+            <input
+              type="radio"
+              id="dizzy-gillespie"
+              name="musician-selection"
+              class="musician-filter-input"
+              value="Dizzy Gillespie"
+            />
+            <label for="dizzy-gillespie" class="musician-filter-label">
+              Dizzy Gillespie
+            </label>
+
+            <input
+              type="radio"
+              id="charlie-parker"
+              name="musician-selection"
+              class="musician-filter-input"
+              value="Charlie Parker"
+            />
+            <label for="charlie-parker" class="musician-filter-label">
+              Charlie Parker
+            </label>
+          </div>
+        </div>
+        <div class="button-container">
+          <button id="generate-btn" type="button">
+            Improvise Ipsum
+            <i class="fas fa-music"></i>
+          </button>
+          <div class="tooltip">
+            <button type="button" id="copy-btn" disabled>
+              <span class="tooltip-text">Copied!</span>
+              Copy to Clipboard<i class="far fa-clipboard"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a
+      class="unsplash-link"
+      href="https://unsplash.com/@gigantfotos?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Download free do whatever you want high-resolution photos from Miti"
+      ><span style="display: inline-block; padding: 2px 3px;"
+        ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+          <title>unsplash-logo</title>
+          <path
+            d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"
+          ></path></svg></span
+      ><span style="display: inline-block; padding: 2px 3px;">Miti</span>
+    </a>
+  </body>
+  <script src="./data/quotes.js"></script>
+  <script src="js/scripts.js"></script>
+</html>

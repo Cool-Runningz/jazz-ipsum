@@ -1,0 +1,243 @@
+body {
+  background-image: url("../images/dark-bass-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: normal;
+  margin: 1.5rem;
+}
+
+h1,
+h2 {
+  font-family: "Abril Fatface", cursive;
+}
+
+h2 {
+  letter-spacing: 1px;
+  margin: 0 1.5rem 1.5rem;
+}
+
+h4 {
+  margin-left: 1rem;
+}
+
+h4 + div {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+}
+
+#header-container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Tangerine", cursive;
+}
+
+button {
+  background-color: #0358719c;
+  color: whitesmoke;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 2rem 0 1rem;
+  cursor: pointer;
+  transition-duration: 0.7s;
+  outline: none;
+}
+
+button > i {
+  margin-left: 0.5rem;
+}
+
+button:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+button:disabled {
+  border: 1px solid #232222;
+  background-color: #908d8d;
+  color: #232222;
+  cursor: initial;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  justify-content: space-around;
+  width: 45rem;
+}
+
+section > div:first-of-type {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2524248c;
+  padding: 0.25rem;
+  border: 1px solid #a29e9eb3;
+}
+
+.length-filter-input,
+.musician-filter-input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.length-filter-input:checked + label {
+  background: #0358719c;
+  color: whitesmoke;
+}
+
+.length-filter-label:first-of-type {
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+  margin-right: -4px;
+}
+.length-filter-label:last-of-type {
+  border-radius: 0 5px 5px 0;
+  border-left: none;
+  margin-left: -4px;
+}
+
+.length-filter-label {
+  padding: 0.5em 0.75em;
+  border: 2px solid #0358719c;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.musician-filter-input:checked + label {
+  background-color: #0358719c;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.musician-filter-label {
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin: 0.4rem;
+  padding: 0.25rem 1rem;
+  width: 8rem;
+}
+
+.ipsum-container {
+  color: #fff;
+  padding: 1.5rem;
+  background-color: #0358719c;
+  resize: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  margin-top: 3rem;
+  min-height: 15rem;
+}
+
+/*Accessible friendly way of hiding the label!*/
+.hide-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/******* Unsplash Props ********/
+.unsplash-link {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 4px 6px;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco",
+    "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial,
+    sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.2;
+  display: inline-block;
+  border-radius: 3px;
+
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+
+.unsplash-link svg {
+  height: 12px;
+  width: auto;
+  position: relative;
+  vertical-align: middle;
+  top: -2px;
+  fill: white;
+}
+
+/******* Tooltip ********/
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 100px;
+  background-color: #555;
+  color: #fafafa;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  font-size: 16px;
+
+  /* Hide the tooltip until the "Copy" button is clicked*/
+  display: none;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -40px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.75s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%; /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
