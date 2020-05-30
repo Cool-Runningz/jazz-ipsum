@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/dark-bass-bg.jpg");
+  background-image: url("../images/slappin-bass.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -45,6 +45,7 @@ h4 + div {
 
 button {
   background-color: #0358719c;
+  border: 1px solid whitesmoke;
   color: whitesmoke;
   font-size: 1rem;
   padding: 0.5rem 1rem;
