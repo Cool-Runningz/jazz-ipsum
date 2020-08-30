@@ -624,12 +624,6 @@ const quotes = [
   {
     size: "small",
     quote:
-      "We’re not going to play the blues anymore. Let the white folks play the blues. They got ’em, so they can keep ’em.",
-    musician: "Miles Davis"
-  },
-  {
-    size: "small",
-    quote:
       "At least one day out of the year all musicans should just put their instruments down, and give thanks too Duke Ellington.",
     musician: "Miles Davis"
   },
@@ -642,12 +636,6 @@ const quotes = [
     size: "small",
     quote:
       "Jazz is the big brother of Revolution. Revolution follows it around.",
-    musician: "Miles Davis"
-  },
-  {
-    size: "small",
-    quote:
-      "As long as I’ve been playing, they never say I done anything. They always say that some white guy did it.",
     musician: "Miles Davis"
   },
   {
